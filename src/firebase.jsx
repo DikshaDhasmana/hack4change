@@ -14,7 +14,7 @@ const firebaseConfig = {
   storageBucket: "hack2change-bbcd8.appspot.com",
   messagingSenderId: "742051116510",
   appId: "1:742051116510:web:8c3dd1c4ecb2bb6886994f",
-  measurementId: "G-GXC6B0V91T"
+//   measurementId: "G-GXC6B0V91T"
 };
 
 // Initialize Firebase
