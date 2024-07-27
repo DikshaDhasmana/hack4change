@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { auth } from "../firebase"
-import {Link } from "react-router-dom"
+import {Link, useNavigate } from "react-router-dom"
 import {
     signInWithEmailAndPassword
 } from "firebase/auth"
@@ -11,6 +11,7 @@ const Signin = () => {
     const [password , setPassword] = useState("");
     const [error , setError] = useState("");
     const [errormessage , setErrormessage] = useState("");
+    const navigate = useNavigate()
 
     const handleChange = (e)=>{
       const {name , value} = e.target;
@@ -26,6 +27,7 @@ const Signin = () => {
 
             const userCredentail = await signInWithEmailAndPassword (auth , email , password);
             const user = userCredentail.user
+            navigate('/')
 
         } catch (error) {
             const errorMessage = error.message;
@@ -35,7 +37,7 @@ const Signin = () => {
         }
     }
     return(
-        <div className="max-w-xl mx-auto ">
+        <div className="max-w-xl mx-auto mb-10">
            <div className="flex  mt-20 border border-md border-gray-700 shadow-md px-4 py-4">
              <div className="relative w-full max-w-7xl">
                 <h1 className="text-4xl font-bold text-center mb-4">Sign In</h1>
@@ -45,7 +47,7 @@ const Signin = () => {
                     <input
                      type="email" placeholder=" Enter your email" onChange={handleChange}
                      name="email" value={email} id="email"
-                     className="w-full m px-3 py-2 mt-1 md:mt-0 bg-gray-200"
+                     className="w-full m px-3 py-2 mt-1 md:mt-0 bg-gray-200" required
                     />
                  </div>
                  <div className="mb-4 flex flex-col ">
@@ -53,7 +55,7 @@ const Signin = () => {
                     <input
                      type="password" placeholder="Enter your password" onChange={handleChange}
                      name="password" value={password} id="password"
-                       className="w-full  px-3 py-2 mt-1 md:mt-0 bg-gray-200"
+                       className="w-full  px-3 py-2 mt-1 md:mt-0 bg-gray-200"  required
                     />
                  </div>
                  <button type="submit" className="bg-blue-600 text-white text-xl text-center rounded w-full py-2" >Sign In</button>
