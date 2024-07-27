@@ -60,14 +60,21 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/aboutus"
+              <a
+              href="#about-us"
                 className="block py-2 px-3 md:p-0 nav-link hover:text-green-950 hover:underline"
               >
                 About us
-              </Link>
+              </a>
             </li>
-
+            <li>
+              <a
+                 href="#our-services"
+                className="block py-2 px-3 md:p-0 nav-link hover:text-green-950 hover:underline"
+              >
+                Our Services
+              </a>
+            </li>
 
 
 

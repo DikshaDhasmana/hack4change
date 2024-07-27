@@ -32,7 +32,7 @@ const Footer = () => {
           <Link className='text-gray-400 ' to='mailto:jyotiahuja833@gmail.com'>
               <div className='flex mt-4 '>
                 <Mail/>
-                <p className='ml-2'>jyotiahuja833@gmail.com</p>
+                <p className='ml-2'>dummy email</p>
               </div>
             </Link>
           
