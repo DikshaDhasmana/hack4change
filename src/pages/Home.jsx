@@ -33,7 +33,7 @@ const features = [
 ]
 
 const Home = () => {
-
+   
   return (
     <div className=''>
 
@@ -70,7 +70,9 @@ const Home = () => {
                   />
                   </div>
                   <h3 className='text-center mt-4 text-xl font-semibold'>{feature.title}</h3>
-                  <Link className='bg-lime-500 text-center w-full rounded my-4 text-lg py-1'>
+                  <Link className='bg-lime-500 text-center w-full rounded my-4 text-lg py-1'
+                  to={`${feature.title.split(' ').join('')}`}
+                  >
                   Explore
                   </Link>
                 </div>

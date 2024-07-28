@@ -15,7 +15,7 @@ const UserProfile = () => {
 
     const handleLogout = () => {
         try {
-            auth.signOut()
+           auth.signOut()
             setUserLoggedIn(false)
             navigate('/')
             

@@ -7,6 +7,7 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import { AuthProvider } from './context/AuthContext';
 import UserProfile from './components/UserProfile';
+import  OrganicFarming  from './pages/OrganicFarming';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/userprofile' element={<UserProfile/>}/>
+        <Route path='/OrganicFarming' element={<OrganicFarming/>}/>
       </Routes>
       <Footer/>
     </Router>
