@@ -7,8 +7,9 @@ const Footer = () => {
     <div className='bg-black'>
         <div className='flex flex-col lg:flex-row lg:space-x-4 lg:justify-around space-y-4 px-4 py-4'>
           <div>
-            <h2 className='text-white mt-4'>About the Company</h2>
-            <p className='text-gray-400 mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi suscipit <br/>molestiae inventore libero fugiat et necessitatibus deserunt quidem incidunt vitae.</p>
+            <h2 className='text-white mt-4'>About Us</h2>
+            <p className='text-gray-400 mt-4'>At Krishi Mitra, we are dedicated to revolutionizing the agricultural sector through technology and innovation.<br/> Our mission is to provide farmers with cutting-edge tools and resources to enhance productivity, sustainability, and overall well-being.
+            </p>
           </div>
 
           <div className='flex flex-col'>
