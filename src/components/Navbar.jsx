@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { auth } from "../firebase";
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,8 @@ const Navbar = () => {
     <nav className="navbar sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 navbar-items">
         <img
-          src=""
-          className="h-10 navbar-img "
+          src={logo}
+          className="h-20 w-auto navbar-img "
           alt="Website Logo"
         />
 
